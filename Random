@@ -1,0 +1,16 @@
+import random
+import string
+
+def generate_password(length):
+    # Строка с символами, из которых будет состоять пароль
+    characters = string.ascii_letters + string.digits + string.punctuation
+    # Генерация пароля заданной длины
+    password = ''.join(random.choice(characters) for i in range(length))
+    return password
+
+# Запрос у пользователя длины пароля
+length = int(input("Введите длину пароля: "))
+
+# Генерация пароля и вывод результата
+password = generate_password(length)
+print("Сгенерированный пароль:", password)
