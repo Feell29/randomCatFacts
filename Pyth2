@@ -1,0 +1,14 @@
+# Заданный список чисел
+numbers = [1, 2, 3, 4, 5]
+
+# Вычисление суммы всех чисел в списке
+sum_result = sum(numbers)
+
+# Вычисление произведения всех чисел в списке
+product_result = 1
+for num in numbers:
+    product_result *= num
+
+# Вывод результатов
+print("Сумма всех чисел в списке:", sum_result)
+print("Произведение всех чисел в списке:", product_result)
