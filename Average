@@ -1,0 +1,21 @@
+def average(numbers):
+    # Проверяем, пуст ли список
+    if not numbers:
+        return None
+    # Вычисляем сумму всех чисел в списке
+    total = sum(numbers)
+    # Вычисляем количество чисел в списке
+    count = len(numbers)
+    # Вычисляем среднее арифметическое
+    avg = total / count
+    return avg
+
+# Пример списка чисел
+numbers = [5, 10, 15, 20, 25]
+
+# Вычисляем среднее арифметическое и выводим результат
+avg = average(numbers)
+if avg is not None:
+    print("Среднее арифметическое чисел в списке:", avg)
+else:
+    print("Список чисел пуст!")
