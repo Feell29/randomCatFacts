@@ -1,0 +1,11 @@
+# Функция для фильтрации четных чисел
+def filter_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    return even_numbers
+
+# Пример списка чисел
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Вызов функции и вывод результата
+result = filter_even_numbers(numbers)
+print("Четные числа в списке:", result)
