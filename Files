@@ -1,0 +1,21 @@
+import os
+
+def find_files(directory):
+    files_list = []
+    # Проход по всем подкаталогам и файлам в указанном каталоге
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            # Добавление пути к файлу в список
+            files_list.append(os.path.join(root, file))
+    return files_list
+
+# Указываем путь к каталогу, в котором нужно найти файлы
+directory = "/путь/к/каталогу"
+
+# Получаем список файлов
+files = find_files(directory)
+
+# Выводим список найденных файлов
+print("Найденные файлы:")
+for file in files:
+    print(file)
